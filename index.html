@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/variables.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+</head>
+<body>
+    <main>
+        <section class="card">
+            <img src="src/images/illustration-box-desktop.svg" alt="uma caixa" class="image-box">
+            <div class="ilustration-container">
+                <picture>
+                    <source srcset="src/images/illustration-woman-online-mobile.svg" media="(max-width: 900px)">
+                    <img src="src/images/illustration-woman-online-desktop.svg" alt="mulher navegando na internet">
+                </picture>
+            </div>
+
+            <div class="faq-container">
+                <h1 class="title">faq</h1>
+                <ul class="faq-list">
+                    <li class="item">
+                        <div>
+                            <h2 class="question">How many team members can I invite?</h2>
+                            <p class="answer">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+                        </div>
+                        <img src="src/images/icon-arrow-down.svg" alt="seta para baixo" class="arrow-down">
+                    </li>
+                    <li class="item item-open">
+                        <div>
+                            <h2 class="question">What is the maximum file upload size?</h2>
+                            <p class="answer">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+                        </div>
+                        <img src="src/images/icon-arrow-down.svg" alt="seta para baixo" class="arrow-down">
+                    </li>
+                    <li class="item">
+                        <div>
+                            <h2 class="question">How do I reset my password?</h2>
+                            <p class="answer">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
+                        </div>
+                        <img src="src/images/icon-arrow-down.svg" alt="seta para baixo" class="arrow-down">
+                    </li>
+                    <li class="item">
+                        <div>
+                            <h2 class="question">Can I cancel my subscription?</h2>
+                            <p class="answer">Yes! Send us a message and we’ll process your request no questions asked.</p>
+                        </div>
+                        <img src="src/images/icon-arrow-down.svg" alt="seta para baixo" class="arrow-down">
+                    </li>
+                    <li class="item">
+                        <div>
+                            <h2 class="question">Do you provide additional support?</h2>
+                            <p class="answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+                        </div>
+                        <img src="src/images/icon-arrow-down.svg" alt="seta para baixo" class="arrow-down">
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="src/scripts/index.js"></script>
+</body>
+</html>
