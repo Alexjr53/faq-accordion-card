@@ -1,15 +1,15 @@
-const questions = document.querySelectorAll('.item');
+import {closeQuestion, closeCurrentQuestionOpenOther, openQuestion} from './question.js'
 
-questions.forEach((item)=>{
-    item.addEventListener('click', ()=>{
+document.querySelectorAll('.item').forEach((item) => {
+    item.addEventListener('click', () => {
         const currentQuestion = document.querySelector('.item-open');
-        if(item.classList.contains('item-open')){
-            currentQuestion.classList.remove('item-open');
-        }else if(currentQuestion){
-            currentQuestion.classList.remove('item-open');
-            item.classList.add('item-open');
-        }else{
-            item.classList.add('item-open');
+       
+        if (item.classList.contains('item-open')) {
+            closeQuestion(currentQuestion);
+        } else if (currentQuestion) {
+            closeCurrentQuestionOpenOther(item, currentQuestion);
+        } else {
+            openQuestion(item);
         }
     })
 })
